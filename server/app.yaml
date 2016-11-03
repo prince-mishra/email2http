@@ -1,0 +1,17 @@
+application: your_app_name_goes_here
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /_ah/mail/.+
+  script: EmailHandler.app
+  login: admin
+
+- url: /.*
+  script: EmailHandler.app
+
+
+inbound_services:
+- mail

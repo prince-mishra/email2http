@@ -1,0 +1,3 @@
+appcfg.py -A your_app_name_goes_here update server --no_cookies
+
+config_format = {"url": "<url>", "headers": {"a": "b"}, "payload": {"text": "%(body)s"}}
